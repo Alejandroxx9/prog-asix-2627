@@ -1,0 +1,12 @@
+preu_actual = int(input("Preu actual del Toblerone?: "))
+perce_descompte = int(input("Introdueix el % de descompte actual del Toblerone: "))
+calc_descompte = (preu_actual * perce_descompte) / 100
+import_despeses = int(input("Introdueix l'import de les despeses de les vacances: "))
+amortitzar = (import_despeses / calc_descompte)
+print("--------------------------------------------------------------------------------")
+print(f"Preu per unitat: {preu_actual}€")
+print(f"Descompte per cada unitat: {perce_descompte}%")
+print(f"Benefici per unitat: {calc_descompte}€")
+print(f"Despeses de les nostres vacances: {import_despeses}€")
+print("--------------------------------------------------------------------------------")
+print(f"Nº de Toblerones que hem de comprar i revendre per amortitzar les vacances: {amortitzar}")

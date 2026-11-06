@@ -1,0 +1,8 @@
+import_inicial = int(input("Import Inicial: "))
+per_propina = int(input("Percentatge de propina que vols donar?: "))
+calc_propina = (import_inicial / 100) * (per_propina)
+total = (import_inicial + calc_propina)
+print (f"Import inicial: {import_inicial}€")
+print (f"Propina ({per_propina}%): {calc_propina}€")
+print ("-----------------------")
+print (f"Total a pagar: {total}€")
