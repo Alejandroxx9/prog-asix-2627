@@ -11,13 +11,14 @@ else:
     else:
         stock_final = (stock_final - cli2)
     
-    cli3 = int(input("Compra client 3: "))
-    if cli3 >= stock_final:
-        print(f"El Client 3 ha comprat totes les {stock_final} pocions disponibles")
-    else:
-        stock_final = (stock_final - cli3)
-        print(f"Stock inicial: {stock_inicial}")
-        print(f"Compra client 1: {cli1}")
-        print(f"Compra client 2: {cli2}")
-        print(f"Compra client 3: {cli3}")
-        print(f"Stock al final del dia: {stock_final}")
+        cli3 = int(input("Compra client 3: "))
+        if cli3 >= stock_final:
+            print(f"El Client 3 ha comprat totes les {stock_final} pocions disponibles")
+        else:
+            stock_final = (stock_final - cli3)
+            print(f"==============================")
+            print(f"Stock inicial: {stock_inicial}")
+            print(f"Compra client 1: {cli1}")
+            print(f"Compra client 2: {cli2}")
+            print(f"Compra client 3: {cli3}")
+            print(f"Stock al final del dia: {stock_final}")
