@@ -1,17 +1,15 @@
 print ("Calculadora Bàsica")
 print (42*"=")
 
-calc = input("Introdueix operació a realitzar (+,-,*,/): ")
-if calc not in ("+,-,*,/"):
-    calc = print(f"Simbol equivocat")
+operacio=input("Introdueix l'operació que vols realitzar (+, -, *, /): ")
+
+if operacio not in ["+", "-", "*", "/"]:
+    print("Operació no vàlida. Si us plau, introdueix una operació vàlida.")
 else:
-    n1 = int(input("Introudeix el primer nº: "))
-    n2 = int(input("Introudeix el segon nº: "))
-    if calc == "+":
-        print(f"{n1} + {n2} = {n1+n2}")
-    elif calc == "-":
-        print(f"{n1} - {n2} = {n1-n2}")
-    elif calc == "*":
-        print(f"{n1} * {n2} = {n1*n2}")
-    elif calc == "/":
-        print(f"{n1} / {n2} = {n1/n2}")
+    n1 = input("Introdueix el primer número: ")
+    n2 = input("Introdueix el segon número: ")
+
+    if not n1.isnumeric() or not n2.isnumeric():
+        print("Si us plau, introdueix només números vàlids.")
+
+print ("ADEU")
