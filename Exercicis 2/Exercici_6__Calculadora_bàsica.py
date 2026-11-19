@@ -18,18 +18,35 @@ else:
 
         if operacio == "+":
             resultat = n1 + n2
-            print(f"El resultat de {n1} + {n2} és: {resultat}")
+            if resultat.is_integer():
+                #No tiene decimales
+                resultat = round(resultat)
+            else:
+                print(f"El resultat de {n1} + {n2} és: {resultat}")
+                #Tiene decimales
+            
         elif operacio == "-":
             resultat = n1 - n2
-            print(f"El resultat de {n1} - {n2} és: {resultat}")
+            if resultat.is_integer():
+                #No tiene decimales
+                resultat = round(resultat)
+            else:
+                print(f"El resultat de {n1} - {n2} és: {resultat}")
+                #Tiene decimales
+                
         elif operacio == "*":
             resultat = n1 * n2
-            print(f"El resultat de {n1} * {n2} és: {resultat}")
-        elif operacio == "/":
-            if n2 == 0:
-                print("Error: No es pot dividir per zero.")
+            if resultat.is_integer():
+                #No tiene decimales
+                resultat = round(resultat)
             else:
-                resultat = n1 / n2
+                print(f"El resultat de {n1} * {n2} és: {resultat}")
+        elif operacio == "/":
+            resultat = n1 / n2
+            if resultat.is_integer():
+                #No tiene decimales
+                resultat = round(resultat)
+            else:
                 print(f"El resultat de {n1} / {n2} és: {resultat}")
 
 print ("ADEU")
