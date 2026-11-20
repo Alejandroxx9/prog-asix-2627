@@ -14,25 +14,29 @@ else:
     if not isinstance(n1, (float, int)) or not isinstance(n2, (float, int)):
         print("Si us plau, introdueix només números vàlids.")
 
-    
+    #CONVERTIMOS LOS NUMEROS INTEGROS A NUMEROS FLOAT
     else:
         n1 = float(n1)
         n2 = float(n2)
-
+        
+        #SUMA
         if operacio == "+":
             resultat = n1 + n2
             print(f"El resultat de {n1} + {n2} és: {resultat}")
+            
+        #RESTA 
         elif operacio == "-":
             resultat = n1 - n2
             print(f"El resultat de {n1} - {n2} és: {resultat}")
+            
+        #MULTIPLICACION
         elif operacio == "*":
             resultat = n1 * n2
             print(f"El resultat de {n1} * {n2} és: {resultat}")
+            
+        #DIVISION
         elif operacio == "/":
-            if n2 == 0:
-                print("Error: No es pot dividir per zero.")
-            else:
-                resultat = n1 / n2
-                print(f"El resultat de {n1} / {n2} és: {resultat}")
+            resultat = n1 / n2
+            print(f"El resultat de {n1} / {n2} és: {resultat}")
 
 print ("ADEU")
